@@ -318,7 +318,7 @@ public class PersianDatePickerDialog {
         if (initDate != null) {
             int initYear = initDate.getPersianYear();
             if (initYear > maxYear || initYear < minYear) {
-                Log.e("PERSIAN CALENDAR", "init year is more/less than minYear/maxYear");
+                //Log.e("PERSIAN CALENDAR", "init year is more/less than minYear/maxYear");
                 if (forceMode) {
                     datePickerView.setDisplayPersianDate(initDate);
                 }
@@ -459,7 +459,7 @@ public class PersianDatePickerDialog {
                 dateText.setText(PersianHelper.toPersianNumber(date));
                 break;
             default:
-                Log.d("PersianDatePickerDialog", "never should be here");
+                //Log.d("PersianDatePickerDialog", "never should be here");
                 break;
         }
 
